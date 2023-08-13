@@ -2,5 +2,5 @@
 
 - Layers
 - Nesting
-- Scroll transiitons
+- Scroll transitions
 - Colour spaces
