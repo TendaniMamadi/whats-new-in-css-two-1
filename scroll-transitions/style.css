@@ -1,0 +1,16 @@
+@keyframes scale-up {
+  from {
+    background-color: lightcoral;
+    transform: scaleX(0);
+  }
+  to {
+    background-color: darkmagenta;
+    transform: scaleX(1);
+  }
+}
+
+#progressbar {
+  width: 280px;
+  height: 20px;
+  animation: 2.5s linear forwards scale-up;
+}
