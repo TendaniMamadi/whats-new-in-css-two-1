@@ -10,7 +10,8 @@
 }
 
 #progressbar {
-  width: 280px;
+  width: 100%;
   height: 20px;
-  animation: 2.5s linear forwards scale-up;
+  animation: 2s linear forwards scale-up;
+  transform-origin: 0% 0%;
 }
