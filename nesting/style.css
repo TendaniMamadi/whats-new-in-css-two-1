@@ -1,7 +1,54 @@
 /* Nesting and scrolling */
+:root{
 
-header {
-  margin: 0 auto;
-  max-width: 60rem;
+  --header-height:90px;
 }
 
+
+html{
+  scroll-behavior:smooth;
+
+}
+
+section{
+  min-height: 100vh;
+  scroll-margin-top: calc(var(--header-height) + 2rem);
+}
+
+header {
+  height: var(--header-height);
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+
+  /* nesting */
+  & a {
+    color: grey;
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
+
+
+    &:hover {
+      color: black;
+
+      & svg {
+        & path {
+          fill: black;
+        }
+      }
+    }
+  }
+
+}

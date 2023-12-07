@@ -1,5 +1,19 @@
 /* Layers */
-header {
-  margin: 0 auto;
-  max-width: 60rem;
+
+@layers app{
+  @import "app.css";
 }
+
+
+#pink{
+  color: pink;
+}
+
+p{
+  color: green;
+}
+
+.blue{
+  color: blue;
+}
+
